@@ -9,18 +9,18 @@ package model;
  * @author USER
  */
 public class BukuKomik extends Buku {
-    protected String volume;
+    protected int volume;
     
-    public BukuKomik(String idBuku, String judul, String penulis, int tahunTerbit, String volume) {
+    public BukuKomik(String idBuku, String judul, String penulis, int tahunTerbit, int volume) {
         super(idBuku, judul, penulis, tahunTerbit);
         this.volume = volume;
     }
     
-    public String getVolume(){
+    public int getVolume(){
         return volume;
     }
     
-    public void setVolume(String volume){
+    public void setVolume(int volume){
         this.volume = volume;
     }
     
@@ -28,6 +28,7 @@ public class BukuKomik extends Buku {
         System.out.println("===============");
         System.out.println("Kategori Buku Komik");
         super.tampilkanInfoPerpustakaan();
+        System.out.println("volume : "+ volume);
         System.out.println("===============");
     }
     
