@@ -16,7 +16,7 @@ public class Pt4 {
 
     public static void main(String[] args) {
         BukuKomik bukuKomik1 = new BukuKomik(
-        "IDBUKU", "Sang Gagah Merah Putih", "Chiqo", 2020, "2"
+        "IDBUKU", "Sang Gagah Merah Putih", "Chiqo", 2020, 2
         );
         
         bukuKomik1.tampilkanBukuKomik();
