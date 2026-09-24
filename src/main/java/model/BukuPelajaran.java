@@ -9,18 +9,18 @@ package model;
  * @author USER
  */
 public class BukuPelajaran extends Buku {
-    protected String tingkatan;
+    protected int tingkatan;
     
-    public BukuPelajaran(String idBuku, String judul, String penulis, int tahunTerbit, String tingkatan) {
+    public BukuPelajaran(String idBuku, String judul, String penulis, int tahunTerbit, int tingkatan) {
         super(idBuku, judul, penulis, tahunTerbit);
         this.tingkatan = tingkatan;
     }
     
-    public String getTingkatan(){
+    public int getTingkatan(){
         return tingkatan;
     }
     
-    public void setTingkatan(String tingkatan){
+    public void setTingkatan(int tingkatan){
         this.tingkatan = tingkatan;
     }
     
